@@ -25,8 +25,8 @@
 * In Controller
 Iniciando a configuração
 
-'        $config = array(
-                'author'   => 'Your name',
+'        $config = array(<br />
+                'author'   => 'Your name', <br />
                 'title'    => 'Your title',
                 'subject'  => 'Your subject',
                 'name'     => Text::random().'.pdf', // name file pdf
