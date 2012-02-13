@@ -23,21 +23,30 @@
 ## Using ##
 
 * In Controller
+
+1.
 Iniciando a configuração
 
-'        $config = array(<br />
-                'author'   => 'Your name', <br />
+<pre>
+<code>
+
+       $config = array(
+                'author'   => 'Your name',
                 'title'    => 'Your title',
                 'subject'  => 'Your subject',
                 'name'     => Text::random().'.pdf', // name file pdf
         );
-'
+</code>
+
+2.
 Gerando o Html e exporting PDF
-'
+
+<code>
 $view = View_PDF::factory('admin/report/pdf', $config)
         ->set('dados', $dados)
         ->render();
-'
+</code>
+</pre>
 
 [!] View folder /example/ containing 
 
