@@ -36,9 +36,8 @@ class View_PDF extends View {
     
     // locale in folder /html/locale/
     protected $_langue;
+        
     
-    
-
 	public static function factory($file = NULL, array $data = NULL) {
         
 		return new View_PDF($file, $data);
