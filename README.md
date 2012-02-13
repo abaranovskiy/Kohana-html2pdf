@@ -37,16 +37,19 @@ Iniciando a configuração
                 'name'     => Text::random().'.pdf', // name file pdf
         );
 </code>
+</pre>
 
 2.
 Gerando o Html e exporting PDF
 
+<pre>
 <code>
 $view = View_PDF::factory('admin/report/pdf', $config)
         ->set('dados', $dados)
         ->render();
 </code>
 </pre>
+
 
 [!] View folder /example/ containing 
 
