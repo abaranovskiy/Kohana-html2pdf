@@ -70,17 +70,12 @@ class View_PDF extends View {
 	
 	
 	public function render($file = NULL) {
-		
 		$html = parent::render($file);
-                
-		$html2pdf = new HTML2PDF('P','A4', $this->_langue);
-		
+        $html2pdf = new HTML2PDF('P','A4', $this->_langue, $encoding='cp1251');		
         $html2pdf->pdf->SetAuthor( $this->_author );
         $html2pdf->pdf->SetTitle( $this->_title );
         $html2pdf->pdf->SetSubject( $this->_subject );
         $html2pdf->pdf->SetKeywords( $this->_keywords );
-        
-        		
 		$html2pdf->WriteHTML($html);
         $html2pdf->Output($this->_name, 'D');
 	}
