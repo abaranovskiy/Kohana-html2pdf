@@ -1,8 +1,9 @@
 # Kohana-HTML2PDF convert #
   
-* Module Versions: 1.0 *
-* Module URL: https://github.com/sudeste/Kohana-html2pdf
-* Compatible Kohana Version(s): 3.2.x
+* Module Versions: 1.1 *
+* Module URL: https://github.com/abaranovskiy/Kohana-html2pdf
+* Origin Module URL: https://github.com/sudeste/Kohana-html2pdf
+* Compatible Kohana Version(s): 3.3.x
 
 -----------------------------------------------------------
 ## Description ##
@@ -14,8 +15,6 @@
 
 1. install module in bootstrap.php
 
-2. Download class HTML2PDF http://www.html2pdf.fr/en/download e discharges in /vendor/html2pdf/
-
 3. In config file sets Your locate 
 
 
@@ -25,7 +24,7 @@
 * In Controller
 
 1.
-Iniciando a configuração
+Set up a configuration data
 
 <pre>
 <code>
@@ -40,18 +39,14 @@ Iniciando a configuração
 </pre>
 
 2.
-Gerando o Html e exporting PDF
+Geterate an pdf from HTML
 
 <pre>
 <code>
 $view = View_PDF::factory('admin/report/pdf', $config)
-        ->set('dados', $dados)
+        ->set('variable', $Data)
         ->render();
 </code>
 </pre>
 
 
-[!] View folder /example/ containing 
-
-1. php file example code html.
-2. example pdf generated.
